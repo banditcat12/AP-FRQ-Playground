@@ -1,0 +1,50 @@
+//1a
+{int counter = 0;
+int tempcounter =0;
+String letter = "";
+for(int i = 0, i < str.length(), i++){
+    if(str.substring(i,i+1).equals(str.substring(i+1,i+2){
+    tempcounter ++;
+    if(tempcounter > counter){
+    counter = tempcounter;letter = str.substring(i,i+1);
+    }
+}
+//2a
+int counter = round  % 3;if ( counter != 0)    counter = round%2;
+   if (counter != 0)
+        result = 1;
+   else
+        result = 2;
+else
+    result = 3;
+    
+    
+//2b
+int P1move;
+int P2move;
+int p2StartingCoins = 10;
+while( rounds< r || startingCoins > 3 || p2StartingCoins > 3){
+P1move = getPlayer1Move();
+P2move = getPlayer2Move(round);
+if(P1move == P2move ){ 
+    startingCoins -= P1move;
+    p2StartingCoins = p2StartingCoins - P2move + 1;
+    }
+    else{  
+        if (abs(P1move-P2move) == 1){
+            startingCoins -= P1move;
+            p2StartingCoins = p2StartingCoins - P2move + 1;
+        }
+        else{
+            startingCoins -= P1move+2;
+            p2StartingCoins = p2StartingCoins - P2move ;
+        }
+    }
+}
+if (p2StartingCoins > startingCoins){
+    System.out.println("player 2 wins");
+    else if (p2StartingCoins < startingCoins{
+    System.out.println("player 1 wins");
+    }
+    else
+        System.out.println("tie game");
